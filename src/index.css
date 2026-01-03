@@ -1,0 +1,47 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');/*trophy*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');/*Montserrat font*/
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    --royalpink:#e056fd;
+    --black:#090029;
+   --bgcolor:rgba(2,2,30);
+   --darkblue:#14074B;
+   --blurwhite:rgba(255,255,255,.7);
+   --lightwhite:rgba(255,255,255,.8);
+   --box-shadow: 0 1rem .5rem rgba(0,0,0,.3);
+   --border:.2rem solid rgba(255,255,255,.1);
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar
+{
+    width: 1rem;
+}
+::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb
+{
+    background: white;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat','sans-serif';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgba(2,2,30);
+}
