@@ -11,6 +11,7 @@
     padding: 0.8rem 1rem;
     color: var(--lightwhite);
 }
+
 .flex .logo
 {
     font-size: 1.2rem;
@@ -26,10 +27,11 @@
 }
 .navbar a
 {
-    margin:0 1.5rem;
-    font-size: 1.1rem;
+     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  margin: 0 clamp(0.5rem, 2vw, 1.5rem);
     color: var(--lightwhite);
     text-decoration: none; 
+    transition: all 0.25s ease-in-out;
 }
 a
 {
@@ -40,8 +42,10 @@ a
 {
     position: relative;
     border: .17rem solid #e056fd;
-    padding: 0.3rem 1.5rem;
-    font-size: 1.1rem;
+      font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  padding: clamp(0.3rem, 1.5vw, 0.5rem)
+           clamp(0.9rem, 3vw, 1.5rem);
+  transition: all 0.25s ease-in-out;
     color: var(--royalpink);
     border-radius: .5rem;
     cursor: pointer;
@@ -75,7 +79,7 @@ a
 }
 .login
 {
-    margin-left: 0.6rem;
+    margin-left: clamp(0.3rem, 1vw, 0.6rem);
 }
 .icon {
     display: flex;
@@ -157,7 +161,7 @@ a
 
 
 .features {
-    margin: 6rem;
+    margin: clamp(2rem, 5vw, 6rem);
 }
 
 .featuretitle {
@@ -182,12 +186,14 @@ a
 .features .row {
     margin-top: 5rem;
     display: flex;
+    flex-wrap: nowrap;
     gap: 20px;
 }
 
 .features .col {
     flex: 1;
-    min-width: 300px;
+   width: clamp(180px, 45vw, 300px);
+    
 }
 .featurecard {
     background-color: #343a40;
@@ -660,7 +666,7 @@ color: #e056fd;
 
 /* ---------- MOBILE NAVBAR ---------- */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   /* ---------- HEADER ---------- */
   .flex {
@@ -686,7 +692,7 @@ color: #e056fd;
 
   .navbar a {
     padding: 0.8rem 1rem;
-    font-size: 1.1rem;
+   font-size: clamp(1rem, 4vw, 1.2rem);
     text-align: center;
   }
  .menu-toggle {
@@ -702,9 +708,9 @@ color: #e056fd;
   }
 
   .btn {
-  font-size: 0.5rem;
-  padding: 0.4rem 0.7rem;
-  border-width: 0.1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  padding: clamp(0.3rem, 1.5vw, 0.5rem) clamp(0.6rem, 2vw, 0.7rem);
+  border-width: clamp(0.1rem, 0.2vw, 0.1rem);
 }
 
 
@@ -737,20 +743,20 @@ color: #e056fd;
 
   /* ---------- FEATURES ---------- */
   .features {
-    margin: 2rem 0 7rem 0; ;
+    margin: 2rem 1.5rem 5rem 1.5rem;
   }
 
   .features .row {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0;
   }
 
   .featurecard {
-    min-height: 4rem;
-    max-width: 7rem;
-    padding: 1.5rem;
+    min-height: 10rem;
+    max-width: 10rem;
+    padding: 2rem;
   }
 
   .card-title {
@@ -800,7 +806,7 @@ color: #e056fd;
 
   /* ---------- PRICING ---------- */
   .pricing {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   .pricing .box-container {
@@ -814,7 +820,7 @@ color: #e056fd;
 
   /* ---------- CONTACT ---------- */
   .contact {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   .contact .box-container {
@@ -823,7 +829,7 @@ color: #e056fd;
   }
 
   .contact .form {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   .contact .form .input,
@@ -847,12 +853,12 @@ color: #e056fd;
 
   .home .flex .content h3,
   .home .flex .content span {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
-
+  
   .btn {
-    font-size: 0.95rem;
-    padding: 0.5rem 1.4rem;
+    font-size: 0.9rem;
+      padding: 0.45rem 1.1rem;
   }
 }
 

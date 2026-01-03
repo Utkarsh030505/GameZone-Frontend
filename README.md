@@ -1,6 +1,6 @@
 # GameZone 🎮
 
-GameZone is a fun and interactive gaming platform built using **HTML, CSS, and JavaScript** for the frontend, and **PHP with MySQL** for backend login and subscription management. The platform offers various casual games like **Tic-Tac-Toe, Rock Paper Scissors, Word Scramble,** and more.
+GameZone is a fun and interactive gaming platform built using **HTML, CSS, JS and React** for the frontend, and **Express with MySQL** for backend login and subscription management. The platform offers various casual games like **Tic-Tac-Toe, Rock Paper Scissors, Word Scramble,** and more.
 
 ## 🚀 Features
 - **User Authentication:** Sign up, log in, and manage your account securely.
@@ -22,31 +22,22 @@ GameZone is a fun and interactive gaming platform built using **HTML, CSS, and J
 
 ## 📂 Project Structure
 ```
-GameZone/
-│-- index.php         # Homepage
-│-- Games/           # Folder containing game files
-│   ├── 2048
-│   ├── Hangman
-│   ├── Recall rush
-│   ├── Simon game
-│   ├── Rock-paper-scissors
-│   ├── nom nom snake
-│   ├── tic-tac-toe
-│   └── Word scramble
-│-- forms/               # Authentication system
-│   ├── login.jsx
-│   ├── register.jsx
-│   ├── payment.jsx
-│-- Backend/       # Subscription features
-│   ├── server.js
-│   ├── database.db
-│-- public/             # Images, sounds, and other assets
+GameZone
+│-- index.html         
+│-- public/           # Folder containing game files, images, sounds, and other assets
+│   ├── games
+│   ├── images
+│-- src/
+│   ├── App.jsx
+│   ├── App.css   
+│   ├── Components
+│   ├── Forms  
 └── README.md           # Project documentation
 ```
 
 ## 🕹️ Available Games
 - 🟢 **Tic-Tac-Toe**
-- ✊ ✋ ✌ **Rock Paper Scissors**
+- ✌ **Rock Paper Scissors**
 - 🔠 **Word Scramble**
 - 🎮 **2048**
 - 🔡 **Hangman**
