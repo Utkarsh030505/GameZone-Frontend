@@ -155,7 +155,6 @@ const Home = () => {
             <GameCard links="/games/Nom Nom snake/index.html" name="Nom Nom Snake" img="/snake.jpg" />
             <GameCard links="/games/Word Scramble Game/index.html" name="Word Scramble Game" 
             img="/word.jpg" />
-git remote -v
 
           </div>
         </section>
