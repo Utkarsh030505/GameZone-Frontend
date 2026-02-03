@@ -98,7 +98,7 @@ const Home = () => {
             <div className="row">
               <FeatureCard className="featurecard box1" style={{ background: "url('/character-playing-video-games-eating-snacks_23-2148537996.jpg')" }} title={"New Challenges Everyday"} />
               <FeatureCard className="featurecard box2" style={{ background: "url('/multiplayerimg.jpg')" }} title={"Enjoy Multiplayer with Friends"} />
-              <FeatureCard className="featurecard box3" style={{ background: "url('/mobilegamer.jpg')" }} title={"Online and Offline Modes"} />
+              <FeatureCard className="featurecard box3" style={{ background: "url('/mobilegamer.jpg')" }} title={"Multiple Game Modes"} />
             </div>
           </div>
       </div>

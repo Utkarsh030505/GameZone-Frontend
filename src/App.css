@@ -749,19 +749,25 @@ color: #e056fd;
   .features .row {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(109px, 1fr));
+    /* display: flex;
+    flex-wrap: nowrap; */
     gap: 0;
   }
-
+   
   .featurecard {
     min-height: 10rem;
     max-width: 10rem;
-    padding: 2rem;
   }
 
   .card-title {
     margin-top: 2rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  .card-content
+  {
+    display: flex;
+    justify-content: center;
   }
 
   /* ---------- ABOUT SECTION ---------- */
