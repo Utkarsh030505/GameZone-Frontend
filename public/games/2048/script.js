@@ -294,7 +294,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  document.addEventListener("touchstart", handleTouchStart, false);
-  document.addEventListener("touchmove", handleTouchMove, false);
-  document.addEventListener("touchend", handleTouchEnd, false);
+ document.addEventListener("touchstart", e => {
+  e.preventDefault();      // stop pull-to-refresh
+  handleTouchStart(e);
+}, { passive: false });
+
+document.addEventListener("touchmove", e => {
+  e.preventDefault();      // stop page sliding
+  handleTouchMove(e);
+}, { passive: false });
+
+document.addEventListener("touchend", e => {
+  e.preventDefault();
+  handleTouchEnd(e);
+}, { passive: false });
 });
