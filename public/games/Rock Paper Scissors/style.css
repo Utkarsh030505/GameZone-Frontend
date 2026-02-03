@@ -138,3 +138,90 @@ body
   background-color: #7d2ae8;
   color: white;
 }
+
+/* ---------------------------
+      MOBILE RESPONSIVE
+--------------------------- */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .result_images {
+    column-gap: 5rem;          
+    justify-content: center;
+  }
+
+  .result_images img {
+    width: 90px;             
+  }
+
+  .option_images {
+    margin-top: 2rem;
+  }
+
+  .option_image img {
+    width: 50px;
+  }
+
+  .result {
+    font-size: 1.5rem;
+  }
+
+  .scoreboard {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  
+  .result_images {
+    flex-direction: row !important;  
+    align-items: center;
+  }
+
+  .result_images img {
+    width: 70px;
+  }
+
+  .option_images {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+
+  .option_image img {
+    width: 40px;
+  }
+
+  .option_image p {
+    font-size: 0.95rem;
+  }
+
+  .result {
+    font-size: 1.3rem;
+  }
+
+  .scoreboard {
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+  }
+
+  #resetBtn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

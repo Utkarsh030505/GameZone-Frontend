@@ -111,7 +111,7 @@ const Home = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundBlendMode: 'multiply',
-          height: '46rem'
+          minHeight: '40rem'
         }}
         >
           <div className="content" style={{ marginTop: "3rem" }}>
@@ -132,7 +132,7 @@ const Home = () => {
               mind. With a focus on quality, innovation, and user satisfaction, we aim to become the go-to destination for
               gamers of all ages and interests.
 
-              So, what are you waiting for? Dive into world of ,where adventure, and thrill await you at every
+              So, what are you waiting for? Dive into world of, where adventure, and thrill await you at every
               click. Start playing today and discover why we're the ultimate gaming paradise!
             </p>
             <a className="btn" onClick={() => document.getElementById('foot').scrollIntoView()}>Read More</a>
@@ -155,7 +155,6 @@ const Home = () => {
             <GameCard links="/games/Nom Nom snake/index.html" name="Nom Nom Snake" img="/snake.jpg" />
             <GameCard links="/games/Word Scramble Game/index.html" name="Word Scramble Game" 
             img="/word.jpg" />
-git remote -v
 
           </div>
         </section>

@@ -63,3 +63,72 @@ h1 {
 .score-title {
   font-size: 16px;
 }
+/* Overlay popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-box {
+  background: #f8f5f0;
+  padding: 25px 35px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.overlay-box h2 {
+  font-size: 40px;
+  color: #776E65;
+  margin-bottom: 20px;
+}
+
+#retry {
+  padding: 12px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  background: #8f7a66;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#retry:hover {
+  background: #a68b75;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  .grid {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .grid div {
+    width: calc(25% - 14px);
+    height: calc(25% - 14px);
+    font-size: 8vw;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

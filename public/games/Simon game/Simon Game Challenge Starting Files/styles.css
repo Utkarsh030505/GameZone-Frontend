@@ -1,7 +1,9 @@
-*
-{
-  margin: 0;
-  padding: 0;
+* {
+   margin: 0;
+   padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 body {
   text-align: center;
@@ -10,16 +12,11 @@ body {
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   margin:  2%;
   color: #FEF2BF;
 }
 #high{
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.5rem;
-}
-#score
-{
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
 }
@@ -35,6 +32,10 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+  
+}
+button:focus:not(:focus-visible) {
+    outline: none;
 }
 
 .game-over {

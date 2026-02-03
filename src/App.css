@@ -241,8 +241,8 @@ a
     flex: 1 1 30rem;
    text-align: center;
     margin: 0 auto;        
-    max-width: 60rem;     
-    padding: 0 1.5rem;     /
+    max-width: 61rem;     
+    padding: 0 1.5rem;     
 }
 
 .about .content h3
@@ -770,8 +770,9 @@ color: #e056fd;
   }
 
   .about .content {
-    max-width: 100%;
-    padding: 1.5rem 1rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
   }
 
   .about .content h3 {
@@ -779,7 +780,7 @@ color: #e056fd;
   }
 
   .about .content p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-align: left;
     line-height: 1.6;
   }

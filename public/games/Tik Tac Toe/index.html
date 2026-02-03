@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- GAME MODE POPUP -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Select Game Mode</h2>
+
+    <button id="select1P" class="modal-btn">1 Player</button>
+    <button id="select2P" class="modal-btn">2 Player</button>
+
+    <div id="difficultyBox" style="display:none; margin-top:20px;">
+        <h3>Select Difficulty</h3>
+        <button id="easyBtn" class="modal-btn">Easy</button>
+        <button id="mediumBtn" class="modal-btn">Medium</button>
+    </div>
+  </div>
+</div>
+
      <div class="heading">
     <h1>Tik Tak Toe</h1>
 </div>
   <h2 class="result"></h2>
+  
     <div class="container">
         
         <div class="game">
