@@ -294,18 +294,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
- document.addEventListener("touchstart", e => {
-  e.preventDefault();      // stop pull-to-refresh
+ const gameArea = document.querySelector(".grid");
+
+// Touch start
+gameArea.addEventListener("touchstart", e => {
+  e.preventDefault();
   handleTouchStart(e);
 }, { passive: false });
 
-document.addEventListener("touchmove", e => {
-  e.preventDefault();      // stop page sliding
+// Touch move
+gameArea.addEventListener("touchmove", e => {
+  e.preventDefault();
   handleTouchMove(e);
 }, { passive: false });
 
-document.addEventListener("touchend", e => {
+// Touch end
+gameArea.addEventListener("touchend", e => {
   e.preventDefault();
   handleTouchEnd(e);
 }, { passive: false });
+
 });

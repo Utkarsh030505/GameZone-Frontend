@@ -22,8 +22,9 @@
 {
     color: var(--royalpink);
 }
-.navbar{
-  margin-left: 5rem;
+.navbar
+{
+  padding-right: 3.5rem;
 }
 .navbar a
 {
@@ -122,8 +123,6 @@ a
 {
     flex: 1 1 40rem;
     height: 15rem;
-    padding-left: 5rem;
- 
 }
 .home .flex .content h3
 {
@@ -193,7 +192,7 @@ a
 .features .col {
     flex: 1;
    width: clamp(180px, 45vw, 300px);
-    
+  
 }
 .featurecard {
     background-color: #343a40;
@@ -695,10 +694,31 @@ color: #e056fd;
    font-size: clamp(1rem, 4vw, 1.2rem);
     text-align: center;
   }
- .menu-toggle {
-    display: block;
+ .icon {
+    order: 1;
   }
 
+  /* Hamburger should appear before Sign-in */
+  .menu-toggle {
+    order: 2;
+    display: block;
+    font-size: 1.6rem;
+    margin-left: auto; 
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  /* Sign In / Logout button last */
+  .btnbox {
+    order: 3;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Navbar stays below */
+  .navbar {
+    order: 4;
+  }
   .logo {
     font-size: 1.2rem;
   }
@@ -707,18 +727,13 @@ color: #e056fd;
     min-width: 40px;
   }
 
-  .btn {
-  font-size: clamp(0.8rem, 2.5vw, 1rem);
-  padding: clamp(0.3rem, 1.5vw, 0.5rem) clamp(0.6rem, 2vw, 0.7rem);
-  border-width: clamp(0.1rem, 0.2vw, 0.1rem);
-}
-
-
-.login {
-  margin: 0.4rem 0;
-}
-
-
+  
+  
+  .login {
+    margin: 0.4rem 0;
+  }
+  
+  
   /* ---------- HOME SECTION ---------- */
   .home .flex {
     min-height: auto;
@@ -727,7 +742,9 @@ color: #e056fd;
 
   .home .flex .content {
     padding-left: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .home .flex .content h3,
@@ -824,7 +841,7 @@ color: #e056fd;
   .pricing .box-container .box h3 {
     font-size: 1.6rem;
   }
-
+  
   /* ---------- CONTACT ---------- */
   .contact {
     padding: 2rem 1.5rem;
@@ -834,7 +851,7 @@ color: #e056fd;
     grid-template-columns: 1fr;
     margin: 2rem 0;
   }
-
+  
   .contact .form {
     padding: 2rem 1.5rem;
   }
@@ -854,10 +871,14 @@ color: #e056fd;
     font-size: 0.9rem;
   }
 }
+ .btn {
+    font-size: 0.9rem;
+      padding: 0.45rem 1.1rem;
+  }
 
 /* EXTRA SMALL DEVICES (PHONES < 480px) */
 @media (max-width: 480px) {
-
+  
   .home .flex .content h3,
   .home .flex .content span {
     font-size: 1.5rem;

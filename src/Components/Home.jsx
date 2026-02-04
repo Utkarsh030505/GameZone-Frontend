@@ -83,7 +83,7 @@ const Home = () => {
           <div className="content">
             <h3>Unlimited <span>Gaming</span></h3>
             <p>Endless Adventures, One Click Away - Dive Into the World of Gaming Today!</p>
-            <a href="#" className=" btn" onClick={() => { document.getElementById('topgames').scrollIntoView() }}>Play Now</a>
+            <div><a href="#" className=" btn" onClick={() => { document.getElementById('topgames').scrollIntoView() }}>Play Now</a></div>
           </div>
 
         </section>
@@ -296,12 +296,10 @@ const Home = () => {
 
           { /* Social Icons Section */}
           <div className="footer-social">
-            <a href=""><i className="fab fa-facebook-f"></i></a>
-            <a href=""><i className="fab fa-twitter"></i></a>
-            <a href=""><i className="fab fa-google"></i></a>
-            <a href=""><i className="fab fa-instagram"></i></a>
-            <a href=""><i className="fab fa-linkedin"></i></a>
-            <a href=""><i className="fab fa-github"></i></a>
+            <a href="https://gamezone-frontend-emgb.onrender.com/"><i className="fab fa-google"></i></a>
+            <a href="https://www.instagram.com/utkarsh_pandey5/"><i className="fab fa-instagram"></i></a>
+            <a href="www.linkedin.com/in/utkarshpandey355"><i className="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Utkarsh030505/GameZone-Frontend"><i className="fab fa-github"></i></a>
           </div>
           { /* Social Icons Section Ends */}
 
